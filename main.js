@@ -3,15 +3,10 @@
 
    GitHub Pages sirve archivos estáticos: no hay servidor que reciba el POST.
    Por eso el formulario se manda a Formspree, que recibe el envío y te lo
-   reenvía por mail.
-
-   >>> ÚNICO PASO DE CONFIGURACIÓN <<<
-   1. Crear una cuenta en https://formspree.io (plan free: 50 envíos/mes).
-   2. Crear un formulario nuevo; te da una URL tipo https://formspree.io/f/abcdwxyz
-   3. Pegarla acá abajo, en lugar de PEGAR_ACA_TU_ENDPOINT.
+   reenvía por mail (formulario "Contacto Osphere", plan free: 50 envíos/mes).
    ============================================================ */
 
-const FORM_ENDPOINT = "https://formspree.io/f/PEGAR_ACA_TU_ENDPOINT";
+const FORM_ENDPOINT = "https://formspree.io/f/mgaovwdp";
 
 const form = document.getElementById("contact-form");
 const statusEl = document.getElementById("form-status");
@@ -47,11 +42,6 @@ async function sendForm(data) {
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
-
-  if (FORM_ENDPOINT.includes("PEGAR_ACA_TU_ENDPOINT")) {
-    showStatus("El formulario todavía no está configurado (ver main.js).", "error");
-    return;
-  }
 
   const problem = firstProblem();
   if (problem) {

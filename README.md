@@ -15,17 +15,13 @@ Para verla localmente: abrir `index.html` en el navegador. Nada más.
 
 ---
 
-## 1. Conectar el formulario (hacer esto PRIMERO)
+## 1. El formulario (ya conectado)
 
 GitHub Pages sirve archivos estáticos: no hay servidor que reciba el formulario. Lo recibe
-Formspree y te lo reenvía por mail.
+**Formspree** y lo reenvía a `santinoolivetti810@gmail.com`.
 
-1. Crear cuenta en <https://formspree.io> — el plan free admite **50 envíos por mes**.
-2. Crear un formulario nuevo. Te da una URL del estilo `https://formspree.io/f/abcdwxyz`.
-3. Abrir `main.js` y reemplazar `PEGAR_ACA_TU_ENDPOINT` por esa URL.
-4. El primer envío real pide que confirmes tu mail una vez. Después entra solo.
-
-Hasta que no hagas eso, el formulario avisa en pantalla que no está configurado.
+- Formulario: "Contacto Osphere", endpoint `https://formspree.io/f/mgaovwdp` (en `main.js`).
+- Plan free: **50 envíos por mes**. Los envíos también quedan en el panel de Formspree.
 
 > Si 50 por mes te queda corto: la alternativa gratis sin tope práctico es mover el sitio a
 > Cloudflare Pages y recibir el POST con un Worker. Los archivos son los mismos.

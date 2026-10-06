@@ -6,6 +6,7 @@ tres archivos y una imagen.
 ```
 index.html     la página
 styles.css     estilos (paleta tomada del ERP: navy #0b1a3d / acento #2f6bff)
+movimiento.js  apariciones al scrollear, cifras, desfile y barra de avance
 main.js        envío del formulario
 assets/        el logo
 .nojekyll      que GitHub Pages sirva los archivos tal cual
@@ -68,3 +69,16 @@ En un minuto queda en `https://<tu-usuario>.github.io/osphere-landing/`.
 - **Capturas del sistema**: hoy el hero muestra un esquema dibujado con CSS. Cuando tengas
   capturas reales de pantallas, reemplazan al bloque `.flow-card` y rinden mucho más.
 - **Mail de contacto en el pie**: no hay ninguno. Si querés uno visible, agregalo en el footer.
+
+---
+
+## El movimiento
+
+`movimiento.js` pone la clase `js` en el `<html>`, y **sólo bajo esa clase** el CSS esconde
+algo para animarlo. Si el JS falla, la página se ve entera: una animación nunca puede
+costar contenido. Lo mismo al imprimir (`beforeprint` muestra todo) y con
+`prefers-reduced-motion`, que apaga el movimiento sin esconder nada.
+
+Lo que NO tiene, a propósito: logos de clientes, cantidad de empresas y testimonios. Las
+páginas de la competencia los usan; inventarlos sería mentir. Cuando haya clientes reales
+que den su testimonio, ese es el bloque que más va a rendir.

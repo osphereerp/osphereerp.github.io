@@ -22,6 +22,8 @@
 
 <a class="skip-link" href="#contacto">Ir al formulario de contacto</a>
 
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
 <header class="site-header" id="inicio">
   <div class="wrap header-inner">
     <a class="brand" href="#inicio">
@@ -61,7 +63,7 @@
       </div>
 
       <div class="hero-visual" aria-hidden="true">
-        <div class="flow-card">
+        <div class="flow-card" id="flow-card">
           <p class="flow-title">Emitís una factura</p>
           <ol class="flow-list">
             <li><span class="flow-dot"></span>ARCA autoriza y devuelve el CAE</li>
@@ -85,6 +87,39 @@
       </div>
     </div>
   </section>
+
+  <!-- ===================== CIFRAS ===================== -->
+  <section class="stats" aria-label="El sistema en números">
+    <div class="wrap stats-grid">
+      <div class="stat">
+        <span class="stat-number" data-count-to="18">18</span>
+        <span class="stat-label">módulos integrados</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-count-to="3">3</span>
+        <span class="stat-label">aplicaciones, un solo sistema</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-count-to="100" data-count-suffix="%">100%</span>
+        <span class="stat-label">en el navegador</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-count-to="24" data-count-suffix=" h">24 h</span>
+        <span class="stat-label">para responder tu consulta</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lo que ya trae el sistema, en movimiento continuo. -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Ventas</span><span>Compras</span><span>Stock</span><span>Caja y tesorería</span>
+      <span>Contabilidad</span><span>Facturación ARCA</span><span>Cuentas corrientes</span>
+      <span>Cheques</span><span>Tarjetas</span><span>Conciliación bancaria</span>
+      <span>Libros de IVA</span><span>Listas de precios</span><span>Multisucursal</span>
+      <span>Multimoneda</span><span>Reportes</span><span>Auditoría</span>
+    </div>
+  </div>
 
   <!-- ===================== MÓDULOS ===================== -->
   <section class="section" id="modulos">
@@ -459,6 +494,7 @@
   </div>
 </footer>
 
+<script src="movimiento.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
